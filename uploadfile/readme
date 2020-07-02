@@ -1,0 +1,20 @@
+# 登录服务器
+ssh root@www.zhengsenlin.cn
+
+# 创建虚拟环境
+cd /opt/flask_uploadfile/uploadfile
+yum install python-virtualenv
+# 启动虚拟环境
+python3 -m venv venv
+mkdir app
+cp app.py app/
+[root@senlin uploadfile]# cd /opt/flask_uploadfile/uploadfile/
+[root@senlin uploadfile]# . venv/bin/activate
+(venv) [root@senlin uploadfile]#cd app
+(venv) [root@senlin app]# env FLASK_APP=app.py flask run -h 0.0.0.0
+ * Serving Flask app "app.py"
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)

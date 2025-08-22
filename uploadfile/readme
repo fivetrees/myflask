@@ -1,5 +1,5 @@
 # 登录服务器
-ssh root@www.zhengsenlin.cn
+ssh root@11.11.11.11
 
 # 创建虚拟环境
 cd /opt/flask_uploadfile/uploadfile
